@@ -121,7 +121,6 @@ img {
 .content-inner {
   text-align: center;
   border-top: 1px solid rgba(110, 114, 142, 0.25);
-  border-bottom: 1px solid rgba(110, 114, 142, 0.25);
   margin-bottom: 32px;
 }
 
@@ -134,7 +133,7 @@ img {
   line-height: 28px;
 }
 
-.content-inner-value:not(:last-child) {
+.content-inner-value {
   border-bottom: 1px solid rgba(110, 114, 142, 0.25);
 }
 
@@ -172,6 +171,16 @@ img {
 
 .content-inner-second {
   color: #fff;
+}
+
+.content-inner-second-for-bd-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.content-inner-second-for-bd-inner {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .content-button-second {
