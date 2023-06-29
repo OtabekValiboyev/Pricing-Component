@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,19 +16,29 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <main class="main-content">
     <div class="container">
-      <div class="pricing-component">
+      <section class="pricing-component">
+        <h1 class="visually-hidden">Pricing</h1>
         <h2 class="pricing-component-heading">
           Our Pricing
         </h2>
-        <div class="pricing-toggler-info">
-          <span>Annually</span>
-          <button type="button"></button>
-          <span>Monthly</span>
-        </div>
+        <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="switch">
+            <input class="switch-input-annually visually-hidden" type="radio" name="payment=period" value="annually" id="annually-payment-radio">
+            <input class="switch-input-monthly visually-hidden" type="radio" name="payment=period" value="monthly" id="monthly-payment-radio">
+            <label class="switch-label switch-label-annually" for="annually-payment-radio">Annually</label>
+            <div class="switch-control">
+              <div class="switch-circle"></div>
+              <label class="switch-control-annually" for="annually-payment-radio"></label>
+              <label class="switch-control-monthly" for="monthly-payment-radio"></label>
+            </div>
+            <label class="switch-label switch-label-monthly" for="monthly-payment-radio">Monthly</label>
+          </div>
+        </form>
         <div class="content-wrapper">
           <div class="content-box content-box-first">
             <h4 class="content-name">Basic</h4>
@@ -60,9 +71,10 @@
             <a class="content-button" href="#">LEARN MORE</a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </main>
 
 </body>
+
 </html>
