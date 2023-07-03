@@ -28,8 +28,10 @@
         </h2>
         <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="GET">
           <div class="switch">
-            <input class="switch-input-annually visually-hidden" type="radio" name="payment=period" value="annually" id="annually-payment-radio">
-            <input class="switch-input-monthly visually-hidden" type="radio" name="payment=period" value="monthly" id="monthly-payment-radio">
+            <input class="switch-input-annually visually-hidden" type="radio" name="payment-period" value="annually"
+              id="annually-payment-radio">
+            <input class="switch-input-monthly visually-hidden" checked type="radio" name="payment-period"
+              value="monthly" id="monthly-payment-radio">
             <label class="switch-label switch-label-annually" for="annually-payment-radio">Annually</label>
             <div class="switch-control">
               <div class="switch-circle"></div>
@@ -40,9 +42,11 @@
           </div>
         </form>
         <div class="content-wrapper">
-          <div class="content-box content-box-first">
+          <div class="content-box content-box-first" data-payment-annually="199.99" data-payment-monthly="19.99">
             <h4 class="content-name">Basic</h4>
-            <h2 class="content-heading"><span>$</span>19.99</h2>
+            <h2 class="content-heading">
+              <span class="content-heading-dollor">$</span>
+              <span class="box-heading-value">19.99</span></h2>
             <div class="content-inner">
               <p class="content-inner-value content-inner-value-storage">500 GB Storage</p>
               <p class="content-inner-value content-inner-value-usera">2 Users Allowed</p>
@@ -50,9 +54,12 @@
             </div>
             <a class="content-button" href="#">LEARN MORE</a>
           </div>
-          <div class="content-box content-box-second">
+          <div class="content-box content-box-second" data-payment-annually="249.99" data-payment-monthly="24.99">
             <h4 class="content-name content-inner-second">Professional</h4>
-            <h2 class="content-heading content-inner-second"><span>$</span>24.99</h2>
+            <h2 class="content-heading content-inner-second">
+              <span class="content-heading-dollor">$</span>
+              <span class="box-heading-value">24.99</span>
+            </h2>
             <div class="content-inner content-inner-second content-inner-second-for-bd-wrapper">
               <p class="content-inner-value content-inner-second">1 TB Storage</p>
               <p class="content-inner-value content-inner-second content-inner-second-for-bd-inner">5 Users Allowed</p>
@@ -60,9 +67,11 @@
             </div>
             <a class="content-button content-button-second" href="#">LEARN MORE</a>
           </div>
-          <div class="content-box content-box-third">
+          <div class="content-box content-box-third" data-payment-annually="399.99" data-payment-monthly="99.99">
             <h4 class="content-name">Master</h4>
-            <h2 class="content-heading"><span>$</span>39.99</h2>
+            <h2 class="content-heading">
+              <span class="content-heading-dollor">$</span>
+              <span class="box-heading-value">39.99</span></h2>
             <div class="content-inner">
               <p class="content-inner-value content-inner-value-storage">2 TB Storage</p>
               <p class="content-inner-value content-inner-value-usera">10 Users Allowed</p>
@@ -75,6 +84,8 @@
     </div>
   </main>
 
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
